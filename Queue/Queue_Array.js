@@ -5,18 +5,22 @@ class Node {
 }
 
 class Queue {
-	constructor(head, tail) {
-		this.head = head;
-		this.tail = tail;
+	constructor() {
 		this.collection = [];
 	}
 
+	// check if queue is empty
 	isEmpty() {
 		console.log(this.collection.length);
 		return this.collection.length === 0 ? true : false;
 	}
 
-	peek() {}
+	// return node at the start of the queue
+	peek() {
+		let head = this.collection[0];
+		console.log(head);
+		return head;
+	}
 
 	enqueue() {}
 
