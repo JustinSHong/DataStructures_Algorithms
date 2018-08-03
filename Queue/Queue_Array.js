@@ -22,7 +22,12 @@ class Queue {
 		return head;
 	}
 
-	enqueue() {}
+	// add node to end of queue
+	enqueue(node) {
+		this.collection.push(node);
+		console.log(node);
+		return node; // show node that was added
+	}
 
 	dequeue() {}
 
