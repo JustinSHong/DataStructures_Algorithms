@@ -8,9 +8,13 @@ class Queue {
 	constructor(head, tail) {
 		this.head = head;
 		this.tail = tail;
+		this.collection = [];
 	}
 
-	isEmpty() {}
+	isEmpty() {
+		console.log(this.collection.length);
+		return this.collection.length === 0 ? true : false;
+	}
 
 	peek() {}
 
