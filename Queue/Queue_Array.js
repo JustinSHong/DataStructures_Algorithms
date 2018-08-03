@@ -41,4 +41,9 @@ class Queue {
 		console.log(this.collection.length);
 		return this.collection.length;
 	}
+
+	// print all nodes in the queue
+	show() {
+		console.log(this.collection);
+	}
 }
