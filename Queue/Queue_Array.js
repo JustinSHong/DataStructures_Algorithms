@@ -17,7 +17,7 @@ class Queue {
 
 	// return node at the start of the queue
 	peek() {
-		let head = this.collection[0];
+		const head = this.collection[0];
 		console.log(head);
 		return head;
 	}
@@ -29,7 +29,12 @@ class Queue {
 		return node; // show node that was added
 	}
 
-	dequeue() {}
+	// remove node at the start of queue
+	dequeue() {
+		const removed = this.collection.shift();
+		console.log(removed);
+		return removed; // show node that was removed
+	}
 
 	size() {}
 }
