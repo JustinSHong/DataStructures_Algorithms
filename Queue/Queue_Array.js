@@ -36,5 +36,9 @@ class Queue {
 		return removed; // show node that was removed
 	}
 
-	size() {}
+	// show size of the queue
+	size() {
+		console.log(this.collection.length);
+		return this.collection.length;
+	}
 }
